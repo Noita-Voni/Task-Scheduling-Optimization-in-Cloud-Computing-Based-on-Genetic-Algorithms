@@ -1,0 +1,40 @@
+# Project working preferences
+
+- Only do what the user explicitly asks you to do; do not make additional changes or perform extra tasks.
+- Work strictly phase-by-phase. Do not proceed to the next phase until the user explicitly approves it.
+- Use the actual published Hamed & Alkinani (2021) task-scheduling data for the reproduction where available.
+- Do not silently replace published data with synthetic, mock, or regenerated data.
+- Keep project data checks read-only unless the user explicitly requests changes.
+- Do not keep synthetic datasets, mock data, temporary test scripts, or verification-only files in the final project.
+- If temporary code or data is needed for a requested validation check:
+  - tell the user before creating it;
+  - use it only for that check;
+  - delete it afterward;
+  - explicitly confirm that it was deleted.
+- Where the academic paper is ambiguous or internally inconsistent, do not silently invent a solution.
+  - identify the ambiguity;
+  - distinguish paper-derived facts from implementation assumptions;
+  - obtain or follow the previously approved reproduction convention.
+- Do not modify the frozen research design, GA parameters, chromosome representation, crossover, mutation, selection, baseline, or evaluation protocol unless explicitly requested.
+- Keep the implementation simple, readable, modular, and easy to explain during an academic demonstration.
+- Avoid unnecessary abstractions, frameworks, classes, dependencies, or software-engineering complexity.
+- Prefer straightforward Python and standard data structures where possible.
+- Every important calculation should be traceable and explainable, especially:
+  - precedence constraints;
+  - communication delay;
+  - processor readiness;
+  - task start and finish times;
+  - completion time;
+  - execution cost;
+  - utilisation;
+  - GA fitness.
+- Keep research code separate from reporting/visualisation logic where practical, but do not over-engineer the project structure.
+- During final project cleanup:
+  - remove standalone check/verification scripts;
+  - remove temporary fixtures and temporary data;
+  - remove verification-only code once its purpose is complete;
+  - keep the working problem definition, scheduler, GA, baseline, experiment and reporting pipeline intact;
+  - update affected documentation;
+  - explicitly confirm what was removed.
+- Never tune or alter the experiment simply to obtain a favourable result.
+- If the GA performs poorly against the baseline, report the result honestly and first verify correctness before proposing any changes.
